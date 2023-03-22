@@ -1,0 +1,121 @@
+.card-detail {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.image {
+    margin: 0 auto;
+    padding: 10px;
+    width: 100%;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.ranting {
+    color: white;
+    font-size: larger;
+}
+
+.informations {
+    color: rgb(255, 255, 255);
+    font-family: verdana;
+    padding: 10px;
+    gap: 10px;
+    grid-row-start: 1;
+    grid-column-start:2;
+    grid-column-end: 3;
+}
+
+.informations h4 {
+    margin: 5px;
+}
+
+.informations span {
+    font-size:15px;
+    font-style: oblique;
+}
+
+.menu {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.menu ul {
+    padding: 10px;
+    list-style-type: none;
+}
+
+.minuman {
+    margin: 0 auto;
+}
+
+.bottom-text {
+    padding: 10px;
+    color: white;
+    width: 100%;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.bottom-text > p {
+    margin-bottom:20px;    
+}
+
+.reviews {
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: cursive;
+    color: rgb(31, 31, 31);
+}
+
+.review span {
+    color: rgb(117, 117, 117);
+    font-size: small;
+    font-style: oblique;
+}
+
+@media screen and (max-width:801px) {
+    .card-detail {
+        grid-template-columns: 1fr;
+    }
+
+    .image {
+        grid-row-start: 1;
+        grid-column-end: 3;
+    }
+
+    .informations {
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+
+    .informations, .informations span{
+        font-size: 13px;   
+    }
+
+    .bottom-text {
+        grid-column-start: 1;
+        grid-row-start: 3; 
+    }
+}
+
+@media screen and (max-width:441px) {
+    .menu {
+        grid-template-columns: 1fr;
+    }
+
+    .minuman {
+        margin: 0px;
+    }
+}

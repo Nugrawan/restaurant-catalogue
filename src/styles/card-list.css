@@ -1,0 +1,76 @@
+#restaurantList {
+    font-family:Cambria;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    overscroll-behavior-y:contain;
+}
+
+.list-image {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+#restaurantFavoritedList {
+    display: grid;
+    margin: 10px;
+    padding: 20px;
+    gap: 20px;
+}
+
+article {
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 0 auto;
+    background-color: #dfdfdf;
+    box-shadow: 3px 3px 4px black;
+}
+
+article:hover {
+    background-color: #afad96;
+}
+
+article a {
+    text-decoration: none;
+    color: black;
+}
+
+.city {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 2px;
+    border: 1px solid black;
+}
+
+.card {
+    padding: 10px;
+}
+
+.card h3 {
+    margin: 10px auto;
+}
+
+.rating {
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    width: 20%;
+    font-family: 'Gill Sans';
+    background-color: rgba(0, 0, 0, 0.89);
+}
+
+@media screen and (max-width:950px) {
+    #restaurantList {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:465px) {
+    #restaurantList {
+        grid-template-columns: 1fr;
+    }
+}
