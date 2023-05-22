@@ -67,6 +67,7 @@ header {
         background-color: #dfdfdf;
         width: 50%;
         position: absolute;
+        z-index: 2;
         margin-top: 75px;
 
         -webkit-transform: translate(-300px, 0);

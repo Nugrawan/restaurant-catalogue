@@ -2,7 +2,6 @@
 const assert = require('assert');
 
 Feature('Liking restaurant');
-
 Before(({ I }) => {
   I.amOnPage('/#/favorite');
 });

@@ -20,5 +20,5 @@ exports.config = {
   include: {
     I: './steps_file.js',
   },
-  name: 'Katalog Restoran + PWA',
+  name: 'Katalog Restoran + PWA + Testing and Optimized',
 };
